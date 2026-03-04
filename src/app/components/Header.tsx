@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from './ui/button';
-import logoImg from 'figma:asset/e09cf434f4642b4eefbedaec44ef7fab7fd81999.png';
+import logoImg from '../../assets/e09cf434f4642b4eefbedaec44ef7fab7fd81999.png';
 
 function TaxClaimLogo() {
   return (
