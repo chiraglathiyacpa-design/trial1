@@ -1,22 +1,20 @@
 import { defineConfig } from 'vite'
-import path from 'path'
-import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
+  // REPLACE 'your-repo-name' with the name of your GitHub repository
+  // Example: if your URL is github.com/john/my-portfolio, use '/my-portfolio/'
+  base: '/your-repo-name/',
   resolve: {
     alias: {
-      // Alias @ to the src directory
-      '@': path.resolve(__dirname, './src'),
+      // This ensures that any "@/" imports from Figma Make map to your src folder
+      "@": "/src",
     },
   },
-
-  // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
-  assetsInclude: ['**/*.svg', '**/*.csv'],
 })
