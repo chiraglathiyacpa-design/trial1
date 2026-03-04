@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import logoWhiteImg from 'figma:asset/ab39d0d1adb619a98bbaa602fe6d2ee4a7060e88.png';
+import logoWhiteImg from '../../assets/ab39d0d1adb619a98bbaa602fe6d2ee4a7060e88.png';
 
 export function Footer() {
   return (
