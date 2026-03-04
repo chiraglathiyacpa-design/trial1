@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet, useLocation } from "react-router";
+import { createHashRouter, Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
 import { HomePage } from "./pages/HomePage";
 import { ServicesPage } from "./pages/ServicesPage";
@@ -27,7 +27,8 @@ function RootLayout() {
   );
 }
 
-export const router = createBrowserRouter([
+// CHANGED: createBrowserRouter -> createHashRouter
+export const router = createHashRouter([
   {
     Component: RootLayout,
     children: [
