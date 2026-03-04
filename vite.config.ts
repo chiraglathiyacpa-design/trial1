@@ -8,9 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  // REPLACE 'your-repo-name' with the name of your GitHub repository
-  // Example: if your URL is github.com/john/my-portfolio, use '/my-portfolio/'
-  base: '/your-repo-name/',
+  // UPDATED: This now matches your repository name 'trial1'
+  base: '/trial1/',
   resolve: {
     alias: {
       // This ensures that any "@/" imports from Figma Make map to your src folder
