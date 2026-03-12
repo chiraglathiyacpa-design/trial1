@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
-import { Helmet } from 'react-helmet-async';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/ui/button';
@@ -57,11 +56,6 @@ export function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Helmet>
-        <title>Tax & Business Insights Blog | TaxClaim US Tax Services</title>
-        <meta name="description" content="Stay updated with professional US tax filing tips, business compliance guides, and S-Corp filing checklists. Expert advice for small businesses and individuals." />
-      </Helmet>
-
       <Header />
 
       {/* Page Hero */}
@@ -119,7 +113,7 @@ export function BlogPage() {
                       {article.category}
                     </div>
                     
-                    <h3 className="text-xl mb-3 text-slate-900 group-hover:text-teal-600 transition-colors line-clamp-3">
+                    <h3 className="text-xl mb-3 text-slate-900 group-hover:text-teal-600 transition-colors">
                       {article.title}
                     </h3>
                     
